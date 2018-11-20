@@ -1,0 +1,1 @@
+  Fatal: RegOpenKey(Software\Microsoft\WZCSVC\Parameters\Interfaces) failed

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<title>Specific Dropdown Example</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+	<!-- no related to script -->
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<link rel="stylesheet" type="text/css" href="../no_related_to_script/css/kickstart.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="../no_related_to_script/style.css" media="all" />
+		<script type="text/javascript" src="../no_related_to_script/js/prettify.js"></script>
+		<script type="text/javascript" src="../no_related_to_script/js/kickstart.js"></script>
+	<!-- /no related to script -->
+	
+	<!-- ck-in-place -->
+		<script type="text/javascript" src="ck/ckeditor.js"></script>
+		<script type="text/javascript" src="ck/adapters/jquery.js"></script>
+		<script type="text/javascript" src="ck-in-place.js"></script>
+	<!-- /ck-in-place -->
+</head>
+<body>
+	<div id="header">
+		<h1>Specific Dropdown Example</h1>
+	</div>
+	<div id="body">
+		<h3>Setup</h3>
+		1. Include JQuery 1.3.2 or newer to &lt;head&gt;. (1.7.2 is recommended because I'm tested on 1.7.2)<br/>
+		<pre>&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;</pre>
+		2. Include CKEditor after JQuery. (don't forget to check file path)
+		<pre>&lt;script type="text/javascript" src="ck/ckeditor.js"&gt;&lt;/script&gt;
+		&lt;script type="text/javascript" src="ck/adapters/jquery.js"&gt;&lt;/script&gt;</pre>
+		3. Include ck-in-plaace.js after CKEditor. (don't forget to check file path)
+		<pre>&lt;script type="text/javascript" src="ck-in-place.js"&gt;&lt;/script&gt;</pre>
+		<p style="font-style:italic;">
+		Note: data will POST to hander.php in $_POST['content']
+		</p>
+		
+		<h3>Quick Example</h3>
+		add class="ediable" to div element.
+		<ul class="tabs left">
+			<li><a href="#example1-showcase">Example 1</a></li>
+			<li><a href="#example1-code">Code</a></li>
+		</ul>
+
+		<div id="example1-showcase" class="tab-content">
+			<div class="editable" data-handler="hander.php">Simple Example</div>
+		</div>
+		<div id="example1-code" class="tab-content">
+			<pre>&lt;div class="editable" data-handler="hander.php"&gt;Simple Example&lt;/div&gt;</pre>
+		</div>
+		
+		<h3>CKEditor With All Tools</h3>
+		add class="full ediable"  to div element.
+		<ul class="tabs left">
+			<li><a href="#example2-showcase">Example 2</a></li>
+			<li><a href="#example2-code">Code</a></li>
+		</ul>
+
+		<div id="example2-showcase" class="tab-content">
+			<div class="full editable">CKEditor With All Tools</div>
+		</div>
+		<div id="example2-code" class="tab-content">
+			<pre>&lt;div class="full editable"&gt;CKEditor With All Tools&lt;/div&gt;</pre>
+		</div>
+		
+		<h3>CKEditor With Simple Tools</h3>
+		add class="simple ediable"  to div element.
+		<ul class="tabs left">
+			<li><a href="#example3-showcase">Example 3</a></li>
+			<li><a href="#example3-code">Code</a></li>
+		</ul>
+
+		<div id="example3-showcase" class="tab-content">
+			<div class="simple editable">CKEditor With Simple Tools</div>
+		</div>
+		<div id="example3-code" class="tab-content">
+			<pre>&lt;div class="simple editable"&gt;CKEditor With Simple Tools&lt;/div&gt;</pre>
+		</div>
+		
+	</div>
+	<div id="footer">
+		Copyright &copy; 2012 <a href="http://www.facebook.com/earthchie">Earthchie</a> | <a href="http://creativecommons.org/licenses/by-nc/3.0/th/">CC BY-NC 3.0</a>
+	</div>
+</body>
+</html>

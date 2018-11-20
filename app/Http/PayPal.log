@@ -1,0 +1,20 @@
+[25-10-2016 07:00:19] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[25-10-2016 07:00:24] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[25-10-2016 07:00:24] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[25-10-2016 07:00:31] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[25-10-2016 07:07:17] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[25-10-2016 07:07:19] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[25-10-2016 07:07:19] PayPal\Core\PayPalHttpConnection: INFO	: GET https://api.sandbox.paypal.com/v1/payments/payment?count=1&start_index=0
+[25-10-2016 07:07:22] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[26-10-2016 02:11:47] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[26-10-2016 02:11:49] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[26-10-2016 02:11:49] PayPal\Core\PayPalHttpConnection: INFO	: GET https://api.sandbox.paypal.com/v1/payments/payment?count=1&start_index=0
+[26-10-2016 02:11:52] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[16-11-2016 01:46:49] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[16-11-2016 01:46:51] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[16-11-2016 01:46:51] PayPal\Core\PayPalHttpConnection: INFO	: GET https://api.sandbox.paypal.com/v1/payments/payment?count=1&start_index=0
+[16-11-2016 01:46:53] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[16-11-2016 01:48:53] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[16-11-2016 01:48:55] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[16-11-2016 01:48:55] PayPal\Core\PayPalHttpConnection: INFO	: GET https://api.sandbox.paypal.com/v1/payments/payment?count=10&start_index=0
+[16-11-2016 01:48:57] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
