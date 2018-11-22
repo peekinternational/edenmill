@@ -1,6 +1,48 @@
+
+
+
+ 
 <div id="home" class="{{ isset($theme['theme']['value'])?$theme['theme']['value']:'ls' }} page_toplogo">
     <div class="container-fluid">
-        <div class="col-lg-4 col-md-4 col-sm-12 text-md-center">
+         <div class="col-lg-offset-4 col-lg-4 col-md-3 col-sm-4 text-sm-center text-right" style="padding-top: 4px">
+                    {!! Form::open(['route' => 'search','class'=>'searchform search-form','method'=>'get']) !!}
+                    <input type="text" value="{{ ((isset($_GET['q']) && !empty($_GET['q'])?$_GET['q']:'')) }}" name="q" class="search-form__search form-control"
+                           placeholder="Search keyword" id="modal-search-input">
+                    <button type="submit" class="search-form__button">Search</button>
+                    {!! Form::close() !!}
+
+                    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal"
+                         id="search_modal"></div>
+                </div>
+
+        <!-- <div class="col-lg-4 col-md-4 col-sm-12 text-md-center">
+            <div class="contact-info">
+                <?php
+                    $site_addresses = explode('|',(isset($site['address']['value'])?$site['address']['value']:''));
+                    $site_phone = explode('|',(isset($site['phone']['value'])?$site['phone']['value']:''));
+                ?>
+                @if(isset($site_addresses) && is_array($site_addresses) && count($site_addresses)>0)
+                    <p class="contact-info__address">{{ $site_addresses[0] }}</p>
+                @endif
+                @if(isset($site_phone) && is_array($site_phone) && count($site_phone)>0)
+                    <p class="contact-info__phone">
+                        <span>{{ substr(trim($site_phone[0]),0,4) }}</span> {{ substr($site_phone[0],4,strlen(trim($site_phone[0]))) }}
+                    </p>
+                @endif
+                @if(isset($site['working_hours']['value']))
+                    <p class="contact-info__work-time">
+                        {{ $site['working_hours']['value'] }}
+                    </p>
+                @endif
+                @if(Auth::check() && Auth::user()->hasRole('admin'))
+                        <p>
+                            <a href="{{ url('/dashboard') }}">Dashboard</a>
+                            - <a href="{{ url('/logout') }}">Logout</a>
+                        </p>
+                @endif
+            </div>
+        </div> -->
+        <div class="col-lg-4 col-md-4 col-sm-8 text-md-center text-right">
             <ul class="social-list">
                     @if(isset($site['facebook']['value']) && (!isset($site['hide_facebook']['value']) || $site['hide_facebook']['value']!='1'))
                         <li>
@@ -67,37 +109,6 @@
                     @endif
             </ul>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-center">
-            <a href="{{ url('/') }}" class="logo">
-                <img src="{{ asset('assets/images/logo.png') }}" alt="">
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 text-md-center">
-            <div class="contact-info">
-                <?php
-                    $site_addresses = explode('|',(isset($site['address']['value'])?$site['address']['value']:''));
-                    $site_phone = explode('|',(isset($site['phone']['value'])?$site['phone']['value']:''));
-                ?>
-                @if(isset($site_addresses) && is_array($site_addresses) && count($site_addresses)>0)
-                    <p class="contact-info__address">{{ $site_addresses[0] }}</p>
-                @endif
-                @if(isset($site_phone) && is_array($site_phone) && count($site_phone)>0)
-                    <p class="contact-info__phone">
-                        <span>{{ substr(trim($site_phone[0]),0,4) }}</span> {{ substr($site_phone[0],4,strlen(trim($site_phone[0]))) }}
-                    </p>
-                @endif
-                @if(isset($site['working_hours']['value']))
-                    <p class="contact-info__work-time">
-                        {{ $site['working_hours']['value'] }}
-                    </p>
-                @endif
-                @if(Auth::check() && Auth::user()->hasRole('admin'))
-                        <p>
-                            <a href="{{ url('/dashboard') }}">Dashboard</a>
-                            - <a href="{{ url('/logout') }}">Logout</a>
-                        </p>
-                @endif
-            </div>
-        </div>
+        
     </div>
 </div>
