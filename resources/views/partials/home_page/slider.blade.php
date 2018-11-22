@@ -31,12 +31,29 @@
     @endif
         </div>
         </div>
-        <div class="col-lg-6" style="padding: 0px 0px;">
-            <div style="height: 316px; overflow: hidden;">
-                <img src="{{ asset('assets/images/Abc.png') }}" alt="" style="width: 100%;">
-            </div>       
-         
+        <div class="col-lg-6"  style="background-color:black;" >
+           <div class="row">
+                     <div class="col-lg-6" style=" padding-right: 0px;">
+                          <div style="height: 316px; overflow: hidden; position: relative; opacity: .80;">
+                                <img src="{{ asset('assets/images/Abc.png') }}" alt="">
+                                <a href="{{ url('shop/online-shop') }}" class="button-t1__parallax2 overlay-btn">
+                                    online shop
+                                </a>
+                              
+                        </div>  
+
+                     </div>
+                      <div class="col-lg-6">
+                          <div style="height: 316px; overflow: hidden; position: relative; opacity: .80;">
+                                <img src="{{ asset('assets/images/food.png') }}" alt="">
+                                  <a href="{{ url('shop/farm-shop') }}"class="button-t1__parallax2 overlay-btn">
+                                      farm Shop
+                                  </a>
+
+                        </div>  
+                        
+                     </div>
+               </div>     
         </div>
-            
     </div>
 </div>
