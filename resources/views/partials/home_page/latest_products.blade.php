@@ -2,8 +2,8 @@
     <div id="shop" class="{{ isset($theme['theme']['value'])?$theme['theme']['value']:'ls' }} section_padding_bottom_85 banners__position">
         <div class="container">
             <div class="content-block-03" style="  padding-top: 55px;padding-bottom: 0px; text-align: center;">
-                <h2 class="title-t3 text-sm-center" style="margin-bottom: 10px;">Edenmill Farm</h2>
-                <h2 class="title-t2 title-t2--padding text-sm-center">Latest from our Shop and Smokery</h2>
+                <h2 class="title-t3 text-sm-center eden-farm-text" style="margin-bottom: 10px;">Edenmill Farm</h2>
+                <h2 class="title-t2 title-t2--padding text-sm-center eden-farm-text">Latest from our Shop and Smokery</h2>
             </div>
             <div class="clearfix"></div>
             @foreach($latest_products->chunk(4) as $products)

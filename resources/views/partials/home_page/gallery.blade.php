@@ -1,6 +1,6 @@
 @if($gallery->count()>0)
     <div id="play" class="{{ isset($theme['theme']['value'])?$theme['theme']['value']:'ls' }}">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="filters isotope_filters-t2 text-center">
