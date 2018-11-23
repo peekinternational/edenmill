@@ -520,7 +520,7 @@
 
 
    
-    <div class="container page_map">
+    <div class="container page_map" style="margin: 20px auto;">
         <div id="map" class="contact-map"></div>
     </div>
    
@@ -792,9 +792,9 @@
     <script>
       var map;
       function initMap() {
-        var myLatLng = {lat: 30.3753, lng: 69.3451};
+        var myLatLng = {lat: -25.363, lng: 131.044};
         map = new google.maps.Map(document.getElementById('map'), {
-          center: myLatLng,
+          center: {lat: 30.3753, lng: 69.3451},
           zoom: 6
         });
          var marker = new google.maps.Marker({
