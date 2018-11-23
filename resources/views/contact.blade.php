@@ -1,3 +1,8 @@
+@extends('master')
+@section('breadcrumb')
+    @include('partials.breadcrumb')
+@stop
+@section('content')
 <div class="{{ isset($theme['theme']['value'])?$theme['theme']['value']:'ls' }} home_contact-bg contact-01 section_padding_top_60 section_padding_bottom_50">
    <div class="container">
         <div class="row">
@@ -43,3 +48,4 @@
         </div>
     </div>
 </div>
+@stop

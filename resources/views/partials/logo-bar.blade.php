@@ -4,7 +4,12 @@
  
 <div id="home" class="{{ isset($theme['theme']['value'])?$theme['theme']['value']:'ls' }} page_toplogo">
     <div class="container-fluid">
-         <div class="col-lg-offset-4 col-lg-4 col-md-3 col-sm-4 text-sm-center text-right" style="padding-top: 4px">
+        <div class="  col-lg-4" style="padding: 16px 23px;">
+          <!--   <i class="fa fa-phone" aria-hidden="true" style="color: white;"></i> -->
+          <h4 style="color: white;" class="icon"><i   class="fa fa-phone" aria-hidden="true" ></i> 01360771 707</h4>
+
+        </div>
+         <div class="col-lg-4 col-md-3 col-sm-4 text-sm-center text-right" style="padding-top: 4px">
                     {!! Form::open(['route' => 'search','class'=>'searchform search-form','method'=>'get']) !!}
                     <input type="text" value="{{ ((isset($_GET['q']) && !empty($_GET['q'])?$_GET['q']:'')) }}" name="q" class="search-form__search form-control"
                            placeholder="Search keyword" id="modal-search-input">

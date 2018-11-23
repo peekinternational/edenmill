@@ -162,7 +162,7 @@
                 </div>
                 <h3>Preview</h3>
                 <hr>
-                <div class="page_map">
+                <div class="page_map ">
                     <div id="map" class="contact-map" style="width: 100%; height: 400px"></div>
                 </div>
             </div>

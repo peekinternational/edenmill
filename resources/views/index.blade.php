@@ -519,13 +519,13 @@
         </div>-->
 
 
-    @if(!isset($theme['hide-home-map']['value']) || $theme['hide-home-map']['value'] == 1)
-    <div class="page_map">
+   
+    <div class="container page_map">
         <div id="map" class="contact-map"></div>
     </div>
-    @endif
+   
     @if(!isset($theme['hide-home-contact_info']['value']) || $theme['hide-home-contact_info']['value'] == 1)
-        @include('partials.home_page.contact')
+      
     @endif
 @endsection
 
@@ -608,7 +608,7 @@
   </script>
         <!-- Map Scripts -->
 @if(!isset($theme['hide-home-map']['value']) || $theme['hide-home-map']['value'] == 1)
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrT56LiDBI0VCdsWn1x-jsKTHc4NNEoVs"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1RaWWrKsEf2xeBjiZ5hk1gannqeFxMmw"></script>
 <script type="text/javascript">
     var lat;
     var lng;
@@ -789,6 +789,23 @@
         attachSecretMessage(marker, '<h3>Map title</h3><p>Map HTML description</p>');
     }
 </script>
+    <script>
+      var map;
+      function initMap() {
+        var myLatLng = {lat: 30.3753, lng: 69.3451};
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 6
+        });
+         var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1RaWWrKsEf2xeBjiZ5hk1gannqeFxMmw&callback=initMap"
+    async defer></script>
 @endif
             <!--=================Scroll with Menu================-->
     <script>

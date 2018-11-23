@@ -168,7 +168,7 @@
                                 <a href="{{ url('/') }}#about-us" class="sf-with-ul">About Us</a>
                             </li>--}}
                             <li class="">
-                                <a href="" class="sf-with-ul">Contact Us</a>
+                                <a href="{{ url('/contact') }}" class="sf-with-ul">Contact Us</a>
                             </li>
                     </nav>
                     <!-- eof main nav -->
