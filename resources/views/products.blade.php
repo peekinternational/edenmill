@@ -7,7 +7,8 @@
     <div class="{{ isset($theme['theme']['value'])?$theme['theme']['value']:'ls' }} section_padding_top_120 section_padding_bottom_85">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-md-8 col-lg-8">
+                 @include('partials/sidebar')
+                <div class="col-sm-8 col-md-9 col-lg-9">
                     @if($products->count()>0)
                     <div class="shop-sorting">
                         <form class="form-inline">
@@ -34,7 +35,9 @@
                     </div>
                     <ul id="products" class="products list-unstyled grid-view">
                     @foreach($products as $product)
-                        <li class="shop-item product type-product">
+
+                        <li class="shop-item product type-product item-list">
+
                             <div class="side-item">
                                 <figure class="item-media shop-item__img">
                                     <a href="{{ url('product/'.$product->slug) }}">
@@ -54,27 +57,29 @@
                                         <a class="shop-item__meta-tag" href="#">{{ $product->category->name }}</a>
                                         @endif
                                        {{-- <div class="star-rating" title="Rated 4.00 out of 5">
-													<span style="width:80%">
-														<strong class="rating">4.00</strong> out of 5
-													</span>
+                                                    <span style="width:80%">
+                                                        <strong class="rating">4.00</strong> out of 5
+                                                    </span>
                                         </div>--}}
                                     </div>
+                                    <div class="items-name">
                                     <h3 class="shop-item__title">
                                         <a href="{{ url('/product/'.$product->slug) }}">{{ $product->name }}</a>
                                     </h3>
                                     <p class="shop-item__desc">
                                        {{ $product->details }}
                                     </p>
+                                </div>
                                     <div class="shop-item__block">
                                         {!! Form::open(array('url' => 'cart','method' => 'post')) !!}
                                              {!! Form::button('Add to cart',['class'=>'button-t1','type'=>'submit']) !!}
                                              {!!  Form::hidden('id',$product->id)  !!}
 
                                                 <span class="shop-item__price">
-													<span>
-														<span class="amount">&euro; {{ $product->price  }}</span>
-													</span>
-												</span>
+                                                    <span>
+                                                        <span class="amount">&euro; {{ $product->price  }}</span>
+                                                    </span>
+                                                </span>
                                          {!! Form::close() !!}
 
                                     </div>
@@ -99,7 +104,6 @@
                     @endif
                 </div>
 
-                @include('partials/sidebar')
             </div>
 
         </div>

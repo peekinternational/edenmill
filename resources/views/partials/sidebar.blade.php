@@ -1,4 +1,4 @@
-<aside class="col-sm-4 col-md-4 col-lg-4">
+<aside class="col-sm-4 col-md-3 col-lg-3">
     <div class="widget widget_categories">
         <h3 class="widget-title">Categories</h3>
         <ul class="widget_categories__list">
