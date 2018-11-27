@@ -163,9 +163,13 @@
                             <li class="a-blog">
                                 <a href="#" class="sf-with-ul">Blog</a>
                             </li>
+                             
                             <li class="a-aboutus">
                                 <a href="{{ url('/') }}#about-us" class="sf-with-ul">About Us</a>
                             </li>--}}
+                            <li class="">
+                                <a href="{{ url('/contact') }}" class="sf-with-ul">Contact Us</a>
+                            </li>
                     </nav>
                     <!-- eof main nav -->
                 </div>

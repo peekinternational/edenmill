@@ -162,8 +162,8 @@
                 </div>
                 <h3>Preview</h3>
                 <hr>
-                <div class="page_map">
-                    <div id="map" class="contact-map" style="width: 100%; height: 400px"></div>
+                <div class="page_map ">
+                    <div id="map" class="contact-map" style="width: 100%; height: 400px;"></div>
                 </div>
             </div>
         </div>
@@ -364,6 +364,6 @@
             marker.setTitle('Map title'.toString());
             //type your map title and description here
             attachSecretMessage(marker, '<h3>Map title</h3><p>Map HTML description</p>');
-        }
+        
     </script>
 @stop

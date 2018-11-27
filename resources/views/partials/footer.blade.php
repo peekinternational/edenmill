@@ -74,16 +74,7 @@
                                     <li><a href="#">John Muir Way</a></li>
                                 </ul>
                             </div>--}}
-                            <div class="a-footer-menu a-heading-eat">
-                                <ul>
-                                    <li class="a-menu-heading"><a href="#">Other</a></li>
-                                    <li><a href="#">Videos</a></li>
-                                    <li><a href="#">Location</a></li>
-                                    <li><a href="#">Newsletter Signup</a></li>
-                                    <li><a href="#">Offers/Special events</a></li>
-                                    <li><a href="{{ url('shop/gift-vouchers') }}">Gift Vouchers</a></li>
-                                </ul>
-                            </div>
+                           
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
